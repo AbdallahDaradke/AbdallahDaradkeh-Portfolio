@@ -192,7 +192,7 @@
     <section class="contact-sec" id="contact">
       <div>
         <p class="contact-para">Let's Connect</p>
-        <form id="myForm" action="https://formspree.io/f/mwplaknv" method="post">
+        <form action="https://formspree.io/f/mwplaknv" method="post">
           <div>
             <input type="text" class="input" placeholder="Name" name="name" required>
           </div>
@@ -239,35 +239,6 @@
       </div>
      
     </footer>
-
-   <script>
-     const form = document.getElementById('myForm');
-  const successMessage = document.getElementById('success-message');
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    
-    try {
-      const response = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: {
-          'Accept': 'application/json'
-        }
-      });
-      
-      if (response.ok) {
-        // form.style.display = 'none'; // Hide the form
-        successMessage.style.display = 'block'; // Show success message
-        form.reset(); // Clear the form
-      } else {
-        throw new Error('Form submission failed');
-      }
-    } catch (error) {
-    //alert('There was a problem sending your message. Please try again.');
-     }
-  });
-   </script>
 
   </body>
 </html>
