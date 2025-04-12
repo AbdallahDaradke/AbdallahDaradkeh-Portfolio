@@ -15,30 +15,32 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
- 
-    <section class="main-list" id="main-list">
-      <header class="main-list">
-        <div class="main-list">
-          <nav class="main-list">
-            <ul class="main-list main-nav-layout">
-              <div class="main-list-name">
-                <li class="my-name">Abdallah Daradkeh</li>
-              </div>
-              <div class="main-list-items">
-                <li><a href="#main-list">Home</a></li>
-                <li><a href="#about-me">About</a></li>
-                <li><a href="#my-experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#achievement">Achievements</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </div>
-            </ul>
-          </nav>
-        </div>
-      </header>
+  <body>
+    <section class="main-list-section" id="main-list">
+      <nav class="nav-bar">
+        <ul class="main-list">
+          <div class="main-list-name">
+            <li class="my-name">Abdallah Daradkeh</li>
+          </div>
+          <button class="navbar-toggle" aria-label="Toggle navigation">
+            <span class="hamburger"></span>
+          </button>
+          <div class="main-list-items">
+            <li><a href="#main-list">Home</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#my-experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievement">Achievements</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </div>
+        </ul>
+      </nav>
     </section>
     <section class="about-sec">
       <div class="about">
@@ -56,9 +58,11 @@
         </p>
         <div class="hire-me-btn-container">
           <a class="btn" href="#contact">Hire me</a>
-          <a class="btn" href="https://docs.google.com/document/d/1P1_RNBrgQUns6Fq-A8IvibS7mJjPTAMiTNoSCUU8kIk/edit?usp=sharing">My Resume</a>
-
-          
+          <a
+            class="btn"
+            href="https://docs.google.com/document/d/1P1_RNBrgQUns6Fq-A8IvibS7mJjPTAMiTNoSCUU8kIk/edit?usp=sharing"
+            >My Resume</a
+          >
         </div>
       </div>
       <div class="about-img">
@@ -80,7 +84,7 @@
     </div> -->
 
     <section class="about-me-sec" id="about-me">
-      <div class="programmer-img">
+      <div class="programmer-img-container">
         <img
           class="programmer-img"
           src="programmer.webp"
@@ -88,7 +92,10 @@
         />
       </div>
       <div class="about-me-content">
-        <h2>Hello! My name is <span class="h2-hello-my-name">Abdallah Daradkeh</span></h2>
+        <h2 class="hello-about-head">
+          Hello! My name is
+          <span class="h2-hello-my-name">Abdallah Daradkeh</span>
+        </h2>
         <p class="about-me-para">
           I am a dedicated and passionate Full Stack Web Developer with a strong
           foundation in both front-end and back-end development. Constantly
@@ -101,114 +108,116 @@
           opportunities to grow and refine my skills.
         </p>
       </div>
-      
     </section>
-          
 
     <section class="my-experience-sec" id="my-experience">
-
-      
       <h2 class="experience-head-title">My Experience</h2>
       <div class="experience-card-container">
-
-      <div class="experience-card">
-        
-      
-        <div class="experience-card-content">
-        <h3>
-          Exchange Program at US as a ride operator for 4 months - Verginia
-        </h3>
-        <p>4th July 2023 - 15th Oct 2023</p>
-        <p>Busch Gardens</p>
-        <p>
-          Worked as a ride operator at Busch Gardens, Virginia, ensuring smooth
-          ride operations and prioritizing guest safety. Developed strong
-          problem-solving, teamwork, and customer service skills in a fast-paced
-          environment. Managed high guest volumes efficiently while maintaining
-          a positive and engaging experience.
-        </p>
+        <div class="experience-card">
+          <div class="experience-card-content">
+            <h3>
+              Exchange Program at US as a ride operator for 4 months - Verginia
+            </h3>
+            <p>4th July 2023 - 15th Oct 2023</p>
+            <p>Busch Gardens</p>
+            <p>
+              Worked as a ride operator at Busch Gardens, Virginia, ensuring
+              smooth ride operations and prioritizing guest safety. Developed
+              strong problem-solving, teamwork, and customer service skills in a
+              fast-paced environment. Managed high guest volumes efficiently
+              while maintaining a positive and engaging experience.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-      </div>
-      
     </section>
     <section class="projects" id="projects">
       <h3 class="project-title-sec-head">My Projects</h3>
       <div class="project-card-container">
-      <div class="project-card">
-        <img class="project-img" src="Screenshot 2025-04-04 195158.png" alt="Portfolio Project">
-        <div class="project-content">
-        <h4 class="project-head">My Portfolio <span class="technologies-card">HTML</span> <span class="technologies-card">CSS</span></h4>
-        <p class="project-para">A front-end portfolio of my own using HTML & CSS where I display my information, education, experiences, projects and other professional related information</p>
+        <div class="project-card">
+          <img
+            class="project-img"
+            src="Screenshot 2025-04-04 195158.png"
+            alt="Portfolio Project"
+          />
+          <div class="project-content">
+            <h4 class="project-head">
+              My Portfolio <span class="technologies-card">HTML</span>
+              <span class="technologies-card">CSS</span>
+            </h4>
+            <p class="project-para">
+              A front-end portfolio of my own using HTML & CSS where I display
+              my information, education, experiences, projects and other
+              professional related information
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            class="project-img"
+            src="clinicSystem.png"
+            alt="Portfolio Project"
+          />
+          <div class="project-content">
+            <h4 class="project-head">
+              Clinic System <span class="technologies-card">ASP.NET MVC</span>
+            </h4>
+
+            <p class="project-para">
+              Patient Potal, Doctor Portal, Nurse Portal, many functionalities
+              and features include Dashboards, Specific functionalities for each
+              user based on his role
+            </p>
+          </div>
+        </div>
       </div>
-      </div>
-
-      
-
-      <div class="project-card">
-        <img class="project-img" src="clinicSystem.png" alt="Portfolio Project">
-        <div class="project-content">
-        <h4 class="project-head">Clinic System <span class="technologies-card">ASP.NET MVC</span></h4>
-
-        <p class="project-para">Patient Potal, Doctor Portal, Nurse Portal, many functionalities and features include Dashboards, Specific functionalities for each user based on his role</p>
-      </div>
-      </div>
-
-     
-    </div>
-
-      
     </section>
     <div class="border"></div>
 
     <section id="achievement" class="achievement-sec">
-     
       <p class="achievement-para">My Achievements</p>
-       
-         <!-- Programming Hours +4380 hours -->
-          <!-- Capstone Idea(Approved) -->
-        <div>
-      <div class="achievement-card">
-       <i class="bi bi-code-square"></i>
-      <p class="coding-achiev-para">Coding Hours</p>
-      <p class="statistic-para">+4380 </p>
-      </div>
-       <!-- General Projects +45 -->
-      <div class="achievement-card">
-        <i class="fa-solid fa-list-check"></i>
-       <p class="coding-achiev-para">Made Projects</p>
-       <p class="statistic-para">+45</p>
-       </div>
- <!-- Software Development Projects +6 -->
- <div class="achievement-card">
-  <i class="bi bi-app"></i>
- <p class="coding-achiev-para">Software Projects</p>
- <p class="statistic-para">+6</p>
- </div>
- <!-- Web Development Projects +3 -->
- <div class="achievement-card">
-  <i class="fa-solid fa-laptop-code"></i>
- <p class="coding-achiev-para">Web Projects</p>
- <p class="statistic-para">+3</p>
- </div>
- 
 
-</div>
-      
+      <!-- Programming Hours +4380 hours -->
+      <!-- Capstone Idea(Approved) -->
+      <div class="achievement-cards-collection">
+        <div class="achievement-card">
+          <i class="bi bi-code-square"></i>
+          <p class="coding-achiev-para">Coding Hours</p>
+          <p class="statistic-para">+4380</p>
+        </div>
+        <!-- General Projects +45 -->
+        <div class="achievement-card">
+          <i class="fa-solid fa-list-check"></i>
+          <p class="coding-achiev-para">Made Projects</p>
+          <p class="statistic-para">+45</p>
+        </div>
+        <!-- Software Development Projects +6 -->
+        <div class="achievement-card">
+          <i class="bi bi-app"></i>
+          <p class="coding-achiev-para">Software Projects</p>
+          <p class="statistic-para">+6</p>
+        </div>
+        <!-- Web Development Projects +3 -->
+        <div class="achievement-card">
+          <i class="fa-solid fa-laptop-code"></i>
+          <p class="coding-achiev-para">Web Projects</p>
+          <p class="statistic-para">+3</p>
+        </div>
+      </div>
     </section>
     <div class="border"></div>
 
     <section id="skills" class="skills-sec">
-      
       <p class="skills-para-head">My Skills</p>
 
-      <div>
+      <div class="skill-collection">
         <span class="technologies-card-skill">HTML</span>
         <span class="technologies-card-skill">Css</span>
         <span class="technologies-card-skill">JavaScript</span>
         <span class="technologies-card-skill">ASP.NET</span>
+        <span class="technologies-card-skill">MySQL</span>
       </div>
-
     </section>
     <div class="border"></div>
 
@@ -217,13 +226,32 @@
         <p class="contact-para">Let's Connect</p>
         <form action="https://formspree.io/f/mwplaknv" method="post">
           <div>
-            <input type="text" class="input" placeholder="Name" name="name" required>
+            <input
+              type="text"
+              class="input"
+              placeholder="Name"
+              name="name"
+              required
+            />
           </div>
           <div>
-            <input type="email" class="input" placeholder="Email" name="email" required>
+            <input
+              type="email"
+              class="input"
+              placeholder="Email"
+              name="email"
+              required
+            />
           </div>
           <div>
-            <textarea id="message" class="message" name="message" placeholder="Message" row="30" cols="50"></textarea>
+            <textarea
+              id="message"
+              class="message"
+              name="message"
+              placeholder="Message"
+              row="30"
+              cols="50"
+            ></textarea>
           </div>
           <button type="submit" class="contact-btn">Send</button>
         </form>
@@ -257,11 +285,10 @@
       <div class="footer-div">
         <p class="footer-para">© 2025 Abdallah Daradkeh. All rights reserved</p>
         <a href="https://jo.linkedin.com/in/abdallah-daradkeh-847b8a266"
-        ><i class="bi bi-linkedin"></i
-      ></a>
+          ><i class="bi bi-linkedin"></i
+        ></a>
       </div>
-     
     </footer>
-
+    <script src="script.js"></script>
   </body>
 </html>

@@ -7,10 +7,16 @@
 }
 html {
   scroll-behavior: smooth;
+  /* font-size: 10px; It is very handy(useful trick) to let it 10 and not 16(a lot easier to do calculations) */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  /* In this way we respect user defualt font-size(User can customize the font-size) */
+  font-size: 62.5%;
 }
 body {
   background-color: rgb(26 32 44);
   color: #a0aec0;
+  max-width: 100%;
 }
 /* Main Navbar */
 .main-list {
@@ -18,113 +24,142 @@ body {
   background-color: black;
   color: aliceblue;
   font-weight: bold;
-  font-size: 20px;
-}
-.main-nav-layout {
+  font-size: 2rem;
+
   display: flex;
   justify-content: space-between;
-
-  padding: 20px;
+  padding: 2rem;
+  max-width: 100%;
 }
+.nav-bar {
+  max-width: 100%;
+}
+.main-list-section {
+  max-width: 100%;
+}
+
 .main-list-name {
-  margin-left: 30px;
+  margin-left: 3rem;
   color: oklch(80.8% 0.114 19.571);
 }
 .main-list-items {
   display: flex;
   justify-content: space-between;
-  width: 45%;
-  margin-right: 30px;
+  max-width: 45%;
+  margin-right: 3rem;
+  gap: 2.4rem;
+  flex-wrap: wrap;
+  /* font-size: 1rem; */
 }
+
+/* .main-list-items li {
+  max-width: 100%;
+}
+.main-list-items li a {
+  max-width: 100%;
+} */
 
 .my-name {
   font-weight: 800;
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 /* About Section */
 
 .btn {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #121212 !important;
   background-image: linear-gradient(
     to left,
     oklch(80.8% 0.114 19.571),
     oklch(70.4% 0.191 22.216)
   );
-  border-radius: 9999px;
-  padding: 12px 24px;
+  border-radius: 999.9rem;
+  padding: 1.2rem 2.4rem;
+  margin-right: 3rem;
 }
 .hire-me-btn-container {
-  margin-top: 50px;
+  margin-top: 5rem;
 }
 
 .about-sec {
-  margin-top: 160px;
+  margin-top: 16rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   /* flex-direction: row; */
+  /* background-color: #4299e1; */
+  /* gap: ; */
 }
 
 .about {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin-left: 120px;
+  max-width: 50%;
+  margin-left: 12rem;
 }
 .about-heading {
-  font-size: 40px;
+  font-size: 4rem;
   color: oklch(70.4% 0.191 22.216);
+  max-width: 100%;
 }
 .about-para {
-  width: 600px;
-  font-size: 20px;
+  max-width: 60rem;
+  font-size: 2rem;
   line-height: 1.7;
-  margin-top: 60px;
+  margin-top: 6rem;
+  font-size: 2.1rem;
 }
 
 .personal-img {
-  width: 600px;
-  height: 350px;
-  border-radius: 20px;
+  max-width: 100%;
+  /* height: 60%; */
+  border-radius: 2rem;
 }
 .about-img {
-  margin-right: 125px;
+  margin: 12.5rem;
+  height: 100%;
+  width: 40%;
 }
 
 /* Seperated Paragraph(outside about section) */
 .about-contact-para {
-  margin-top: 110px;
-  margin-left: 120px;
-  font-size: 20px;
+  margin-top: 11rem;
+  margin-left: 12rem;
+  font-size: 2rem;
 }
 /* bootstrap icon */
 .bi-linkedin {
   display: inline-flex; /* Makes it behave like a box */
   align-items: center;
   justify-content: center;
-  width: 35px; /* Ensures a circular shape */
-  height: 35px;
-  font-size: 20px; /* Adjust icon size */
+  max-width: 3.5rem; /* Ensures a circular shape */
+  height: 3.5rem;
+  font-size: 2rem; /* Adjust icon size */
   background-color: #0077b5; /*LinkedIn blue */
   color: white; /* Icon color */
   /* border: 2px solid black; */
   border-radius: 50%; /* Makes it a circle */
-  margin-left: 20px;
+  margin-left: 2rem;
   /* margin-top: 35px; */
 }
 
 /* about-me-sec */
 
+.hello-about-head {
+  font-size: 3rem;
+}
 .h2-hello-my-name {
   color: oklch(80.8% 0.114 19.571);
+  font-size: 3rem;
 }
 .about-me-sec {
   display: flex;
-  margin-top: 70px;
-  margin-bottom: 120px;
+  margin-top: 7rem;
+  margin-bottom: 12rem;
   justify-content: center;
-  gap: 50px;
+  align-items: center;
+  /* gap: 5rem; */
   /* border: #a0aec0 solid 2px; */
   /* padding: 50px; */
   /* width: 80%; */
@@ -133,37 +168,56 @@ body {
 .about-me-content {
   display: flex;
   flex-direction: column;
-  margin-left: 120px;
+  margin-left: 12rem;
 }
 
 .about-me-para {
-  width: 500px;
-  font-size: 20px;
-  margin-top: 40px;
+  max-width: 50rem;
+  font-size: 2.1rem;
+  margin-top: 4rem;
   line-height: 1.7;
+  align-self: center;
 }
 
 .programmer-img {
-  width: 550px;
-  height: 450px;
-  border-radius: 10px;
+  max-width: 100%;
+  height: 35vw;
+  border-radius: 1rem;
 }
+.programmer-img-container {
+  /* width: %; */
+  width: 30%;
+  height: 100%;
+  align-self: center;
+}
+
+/*
+.personal-img {
+  max-width: 100%;
+  /* height: 60%; */
+/* border-radius: 2rem; */
+/* } */
+/* .about-img {
+  margin: 12.5rem;
+  height: 100%;
+  width: 40%;
+} */
 
 /* Experience Section*/
 .experience-head-title {
-  font-size: 35px;
+  font-size: 3.5rem;
 }
 .my-experience-sec {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 120px;
+  margin-bottom: 12rem;
 }
 
 .experience-card-container {
   display: flex;
-  gap: 30px;
-  margin-left: 120px;
+  gap: 3rem;
+  margin-left: 12rem;
   justify-content: center;
   align-items: center;
   flex-direction: row;
@@ -171,15 +225,15 @@ body {
 .experience-card {
   background-color: #121212;
   color: white;
-  width: 50%;
-  font-size: 20px;
+  width: 55.5%;
+  font-size: 2rem;
   /* justify-content: center; */
   /* align-items: center; */
   /* align-self: center; */
-  margin-top: 50px;
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+  margin-top: 5rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0rem 0.4rem 0.4rem;
 }
 
 /* Projects Section*/
@@ -188,40 +242,40 @@ body {
 .technologies-card {
   background-color: #1a365d;
   color: #4299e1;
-  padding: 5px;
-  border-radius: 10px;
+  padding: 0.5rem;
+  border-radius: 1rem;
 }
 
-.vl {
-  border-left: 6px solid #90cdf4; /* Creates a vertical line with a border */
-  height: 100px; /*Sets the height of the line */
-  height: 240px;
-  align-self: flex-end;
-  max-height: 100%;
-  /* position: absolute; */
-}
+/* .vl { */
+/* border-left: 6px solid #90cdf4; Creates a vertical line with a border */
+/* height: 100px; Sets the height of the line */
+/* height: 240px; */
+/* align-self: flex-end; */
+/* max-height: 100%; */
+/* position: absolute; */
+/* } */
 .projects {
-  margin-left: 120px;
-  margin-right: 120px;
-  margin-bottom: 60px;
+  margin-left: 12rem;
+  margin-right: 12rem;
+  margin-bottom: 6rem;
 }
 .project-title-sec-head {
-  font-size: 35px;
-  margin-bottom: 60px;
+  font-size: 3.5rem;
+  margin-bottom: 6rem;
 }
 .project-card-container {
   display: flex;
-  gap: 30px;
+  gap: 3rem;
   flex-wrap: wrap;
 }
 .project-card {
   display: flex;
   flex-direction: column;
-  width: 400px;
-  height: 400px;
+  max-width: 40rem;
+  height: 40rem;
   box-shadow: #0000001a;
   background-color: #121212;
-  border-radius: 10px;
+  border-radius: 1rem;
   /* padding: 20px; */
   /* align-items: center;
   justify-content: center; */
@@ -232,15 +286,15 @@ body {
 .project-content {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .project-img {
-  width: 400px;
-  height: 400px;
-  margin-bottom: 40px;
+  width: 100%;
+  height: 40rem;
+  margin-bottom: 4rem;
   /* padding: 20px; */
-  filter: blur(0px);
+  filter: blur(0rem);
   box-shadow: #0000001a;
 }
 .project-para {
@@ -251,7 +305,7 @@ body {
 .project-head {
   /* display: flex;
   justify-content: flex-start; */
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 /* Contact Section */
 
@@ -259,26 +313,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-radius: 15px;
-  padding: 20px;
+  border-radius: 1.5rem;
+  padding: 2rem;
 }
 
 .contact-sec form {
   color: #252525;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: 100%;
+  gap: 2rem;
+  max-width: 100%;
 }
 .contact-para {
-  font-size: 64px;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  font-size: 6.4rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 .input {
-  padding: 15px;
-  border-radius: 10px;
+  padding: 1.5rem;
+  border-radius: 1rem;
   border: none;
   background-color: #121212;
   box-shadow: #0000001a;
@@ -286,9 +340,9 @@ body {
   color: white;
 }
 .message {
-  padding: 15px;
-  padding-bottom: 40px;
-  border-radius: 10px;
+  padding: 1.5rem;
+  padding-bottom: 4rem;
+  border-radius: 1rem;
   border: none;
   background-color: #121212;
   box-shadow: #0000001a;
@@ -308,12 +362,12 @@ body {
     oklch(80.8% 0.114 19.571),
     oklch(70.4% 0.191 22.216)
   );
-  border-radius: 25px;
+  border-radius: 2.5rem;
   color: white;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.8rem;
   box-shadow: #0000001a;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 /* form {
@@ -343,7 +397,7 @@ a:active {
   background-color: #171923;
   color: aliceblue;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2rem;
 
   /* border-bottom: #2d3748 1px solid; */
   /* border-color: #; */
@@ -353,11 +407,11 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
-  padding: 30px;
+  gap: 4rem;
+  padding: 3re;
 }
 .main-list-name-sec {
-  margin-left: 30px;
+  margin-left: 3rem;
   color: oklch(80.8% 0.114 19.571);
 }
 .main-list-items-sec {
@@ -365,12 +419,13 @@ a:active {
   justify-content: flex-start;
   align-items: center;
   /* width: 45%; */
-  margin-right: 30px;
-  gap: 30px;
+  margin-right: 3rem;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 
 .footer-sec {
-  padding: 30px;
+  padding: 3rem;
   background-color: #171923;
   /* border-top-width: 1px;
   border-color: white solid; */
@@ -382,50 +437,56 @@ a:active {
 }
 
 .footer-para {
-  font-size: 20px;
+  font-size: 2rem;
   color: white;
   font-weight: 100;
   /* margin-left: 15%; */
 }
 .border {
   /* width: 80%; Adjust width as needed */
-  height: 1px; /* Border thickness */
+  height: 0.1rem; /* Border thickness */
   background-color: #444; /* Border color */
   margin: 0 auto; /* Centers it */
 }
 
 /* Achievements */
 .achievement-para {
-  font-size: 50px;
-  margin: 40px;
+  font-size: 5rem;
+  margin: 4rem;
 }
 
-.achievement-sec,
-.achievement-sec div {
+.achievement-sec {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
+.achievement-cards-collection {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
 .achievement-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 8%;
-  padding: 80px;
-  padding-right: 150px;
-  padding-left: 150px;
-  border-radius: 15px;
+  max-width: 8%;
+  padding: 8rem;
+  padding-right: 15rem;
+  padding-left: 15rem;
+  border-radius: 1.5rem;
   background-color: #121212;
-  gap: 30px;
-  margin: 30px;
+  gap: 3rem;
+  margin: 3rem;
   flex: 1 1 40%;
   box-shadow: #0000001a;
 }
 
 .coding-achiev-para {
-  font-size: 16px;
+  font-size: 1.6rem;
   text-align: center;
 }
 
@@ -453,13 +514,18 @@ a:active {
 /**/
 
 /* Skills Section */
+.skill-collection {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 .technologies-card-skill {
   background-color: #1a365d;
   color: #4299e1;
-  padding: 5px;
-  padding: 5px 20px;
-  border-radius: 10px;
-  margin: 40px;
+  padding: 0.5rem;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  margin: 4rem;
   /* background-image: linear-gradient(
     to left,
     rgb(121, 40, 202),
@@ -474,7 +540,6 @@ oklch(80.8% 0.114 19.571),
 */
 
 .skills {
-  max-width: 100%;
 }
 .skills-sec {
   margin-bottom: 6.25rem;
@@ -484,4 +549,188 @@ oklch(80.8% 0.114 19.571),
   margin: 80px;
   font-size: 3.813rem;
   text-align: center;
+}
+
+/* .test {
+  background-color: red;
+  margin: 200px 0; */
+/* width: 1000px; */
+/* max-width: 1000px; */
+/* max-width: 50rem; */
+/* padding: 4rem; */
+/* color: white; */
+/* font-size: 2rem; */
+/* }  */
+/* 1 rem = default browser font-size which is 16 px  */
+/* 50 rem = 50 * 16px = 800px */
+
+/** After changing font-size in html to 10px 
+    Now 1 rem = 10px, 50 rem = 500px and so on
+    So that is very beneficial in responsive
+    because we can change all elements size based
+    on screen through just change the font-size in
+    the html element.
+    And everything written in rem unit will be scaled-
+    up or down
+**/
+
+/* margin: 0 auto; to center a container */
+
+/* @media (max-width: 600px); */
+/* is width <= 600px */
+
+/* media query: tools for overwritting specific parts of our code at specific viewport width */
+
+/* Mobile Navbar */
+
+/* Mobile Toggle Button (Hidden on Desktop) */
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.hamburger {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  transition: all 0.3s;
+}
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  top: 8px;
+}
+
+@media (max-width: 1000px) {
+  /* Main Navbar into Mobile */
+  /* .navbar-toggle {
+    display: block;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+
+  .main-list {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+    background-color: #333;
+    flex-direction: column;
+    padding: 2rem;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+
+  .navbar-menu.active {
+    left: 0;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav li {
+    margin: 1rem 0;
+  } */
+
+  /* Optional: Add overlay when menu is open */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+
+  /**/ /**/
+  .main-list {
+    /* overflow: hidden; */
+    /* display: none; */
+  }
+
+  .main-list-items li a {
+    display: none;
+  }
+
+  /* About Sec */
+  .about-heading {
+    font-size: 3.2rem;
+  }
+  .about-sec {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about {
+    margin: 0;
+    /* gap: 0; */
+  }
+
+  .about-img {
+    width: 70%;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+  }
+  .about-contact {
+  }
+
+  /* About-me-section */
+
+  .about-me-sec {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me-content {
+    margin: 0;
+    margin-top: 6rem;
+  }
+  .programmer-img-container {
+    width: 70%;
+  }
+  .programmer-img {
+    width: 100%;
+  }
+
+  /* Project Section */
+
+  .project-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-head {
+    /* font-size: 16px; */
+  }
+  .project-title-sec-head {
+    text-align: center;
+  }
+
+  /*  */
 }

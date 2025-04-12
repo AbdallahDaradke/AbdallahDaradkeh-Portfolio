@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  /* font-size: 10px; It is very handy(useful trick) to let it 10 and not 16(a lot easier to do calculations) */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  /* In this way we respect user defualt font-size(User can customize the font-size) */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+/* using class always will give our code more consistency */
+
+.hero {
+  max-width: 130rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #555;
+}
+
+.hero-img {
+  width: 100%; /* 100% of the hero-img-box container, and since we divide the grid containers into two equals columns(1fr). so the two child containers have the half of the space, now the image is bigger than the container, so 100% will give it the full width of the container without going beyond container borders.  */
+}
