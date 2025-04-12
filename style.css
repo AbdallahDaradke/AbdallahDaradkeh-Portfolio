@@ -451,3 +451,37 @@ a:active {
   ); */
 
 /**/
+
+/* Skills Section */
+.technologies-card-skill {
+  background-color: #1a365d;
+  color: #4299e1;
+  padding: 5px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  margin: 40px;
+  /* background-image: linear-gradient(
+    to left,
+    rgb(121, 40, 202),
+    rgb(255, 0, 128)
+  );
+  outline: transparent solid; */
+}
+
+/*
+oklch(80.8% 0.114 19.571),
+    oklch(70.4% 0.191 22.216)
+*/
+
+.skills {
+  max-width: 100%;
+}
+.skills-sec {
+  margin-bottom: 6.25rem;
+}
+
+.skills-para-head {
+  margin: 80px;
+  font-size: 3.813rem;
+  text-align: center;
+}

@@ -1,0 +1,142 @@
+/* === Responsive Styles === */
+
+/* Mobile (<= 600px) */
+@media (max-width: 600px) {
+  .main-nav-layout {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .main-list-items {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 0;
+  }
+
+  .about-sec {
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 20px 0 20px;
+  }
+
+  .about {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .about-para,
+  .about-contact-para,
+  .about-me-para {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .about-img {
+    margin-right: 0;
+    margin-top: 40px;
+  }
+
+  .personal-img,
+  .programmer-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-me-sec {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 20px;
+  }
+
+  .about-me-content {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .experience-card-container {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .experience-card {
+    width: 90%;
+  }
+
+  .projects {
+    margin: 0 20px;
+  }
+
+  .project-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card,
+  .project-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-sec {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .contact-para {
+    font-size: 32px;
+    text-align: center;
+  }
+}
+
+/* Tablet (601px to 992px) */
+@media (max-width: 992px) {
+  .about {
+    width: 100%;
+    margin-left: 40px;
+  }
+
+  .about-para,
+  .about-contact-para,
+  .about-me-para {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .about-img {
+    margin-right: 40px;
+  }
+
+  .about-me-sec {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+  }
+
+  .experience-card-container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .experience-card {
+    width: 90%;
+  }
+
+  .project-card-container {
+    justify-content: center;
+  }
+
+  .project-card {
+    width: 90%;
+    height: auto;
+  }
+
+  .contact-sec {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
