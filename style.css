@@ -80,6 +80,7 @@ body {
 }
 .hire-me-btn-container {
   margin-top: 5rem;
+  display: flex;
 }
 
 .about-sec {
@@ -620,6 +621,12 @@ oklch(80.8% 0.114 19.571),
 } */
 
 @media (max-width: 1000px) {
+  /* Hire Me Section */
+
+  .hire-me-btn-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
   /* Main Navbar into Mobile */
   /* .navbar-toggle {
     display: block;
