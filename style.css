@@ -584,7 +584,7 @@ oklch(80.8% 0.114 19.571),
 /* Mobile Navbar */
 
 /* Mobile Toggle Button (Hidden on Desktop) */
-.navbar-toggle {
+/* .navbar-toggle {
   display: none;
   background: none;
   border: none;
@@ -617,7 +617,7 @@ oklch(80.8% 0.114 19.571),
 
 .hamburger::after {
   top: 8px;
-}
+} */
 
 @media (max-width: 1000px) {
   /* Main Navbar into Mobile */
@@ -669,14 +669,14 @@ oklch(80.8% 0.114 19.571),
     display: block;
   }
 
-  /**/ /**/
+  /**/
   .main-list {
     /* overflow: hidden; */
     /* display: none; */
   }
 
   .main-list-items li a {
-    display: none;
+    /* display: none; */
   }
 
   /* About Sec */
