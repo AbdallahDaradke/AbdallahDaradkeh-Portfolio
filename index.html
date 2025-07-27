@@ -7,6 +7,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abdallah Daradkeh | Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <!-- <link rel="stylesheet" href="styleresponsive.css" /> -->
 
@@ -19,7 +23,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <style>
+#about-heading {
+  animation-duration: 1.2s;
+  animation-delay: 0.3s;
+}
+</style>
+
   </head>
+
   <body>
     <section class="main-list-section" id="main-list">
       <nav class="nav-bar">
@@ -42,8 +56,8 @@
     </section>
     <section class="about-sec">
       <div class="about">
-        <h2 class="about-heading">Welcome to my Portfolio!</h2>
-        <p class="about-para">
+        <h2 id="about-heading" class="animate__animated animate__fadeInDown about-heading">Welcome to my Portfolio!</h2>
+        <p class="animate__animated animate__zoomIn about-para">
           I am a Full Stack Web Developer with expertise in front-end and
           back-end technologies. I have hands-on experience in ASP.NET MVC,
           JavaScript, HTML, CSS, and WordPress, along with a solid foundation in
@@ -55,9 +69,9 @@
           if you'd like any refinements!
         </p>
         <div class="hire-me-btn-container">
-          <a class="btn" href="#contact">Hire me</a>
+          <a class="animate__animated animate__zoomIn btn" href="#contact">Hire me</a>
           <a
-            class="btn"
+            class="animate__animated animate__zoomIn btn"
             href="https://docs.google.com/document/d/1P1_RNBrgQUns6Fq-A8IvibS7mJjPTAMiTNoSCUU8kIk/edit?usp=sharing"
             >My Resume</a
           >
@@ -65,7 +79,8 @@
       </div>
       <div class="about-img">
         <img
-          class="personal-img"
+
+          class="animate__animated animate__zoomIn personal-img"
           src="WIN_20220526_11_14_36_Pro.jpg"
           alt="Personal image"
         />
@@ -94,7 +109,7 @@
           Hello! My name is
           <span class="h2-hello-my-name">Abdallah Daradkeh</span>
         </h2>
-        <p class="about-me-para">
+        <p class="animate__animated animate__zoomIn about-me-para">
           I am a dedicated and passionate Full Stack Web Developer with a strong
           foundation in both front-end and back-end development. Constantly
           eager to learn and explore new technologies, I am improving my
@@ -209,12 +224,103 @@
     <section id="skills" class="skills-sec">
       <p class="skills-para-head">My Skills</p>
 
-      <div class="skill-collection">
-        <span class="technologies-card-skill">HTML CSS JS</span>
-        <span class="technologies-card-skill">Css</span>
-        <span class="technologies-card-skill">JavaScript</span>
-        <span class="technologies-card-skill">ASP.NET</span>
-        <span class="technologies-card-skill">MySQL</span>
+      <div class="skill-item skill-collection">
+        <span class="technologies-card-skill">
+          <span class="skill-reflex">H</span
+          ><!--
+ --><span class="skill-reflex">T</span
+          ><!--
+ --><span class="skill-reflex">M</span
+          ><!--
+ --><span class="skill-reflex">L</span> <span class="skill-reflex">C</span
+          ><!--
+ --><span class="skill-reflex">S</span
+          ><!--
+ --><span class="skill-reflex">S</span> <span class="skill-reflex">J</span
+          ><!--
+ --><span class="skill-reflex">S</span>
+        </span>
+
+        <span class="skill-item technologies-card-skill">
+          <span class="skill-reflex">R</span
+          ><!--
+ --><span class="skill-reflex">e</span
+          ><!--
+ --><span class="skill-reflex">a</span
+          ><!--
+ --><span class="skill-reflex">c</span
+          ><!--
+ --><span class="skill-reflex">t</span
+          ><!--
+ --><span class="skill-reflex">.</span
+          ><!--
+ --><span class="skill-reflex">j</span
+          ><!--
+ --><span class="skill-reflex">s</span>
+        </span>
+
+        <span class="skill-item technologies-card-skill">
+          <span class="skill-reflex">N</span
+          ><!-- --><span class="skill-reflex">o</span
+          ><!-- --><span class="skill-reflex">d</span
+          ><!-- --><span class="skill-reflex">e</span
+          ><!-- --><span class="skill-reflex">.</span
+          ><!-- --><span class="skill-reflex">j</span
+          ><!-- --><span class="skill-reflex">s</span>
+        </span>
+        <span class="skill-item technologies-card-skill">
+          <span class="skill-reflex">A</span
+          ><!-- --><span class="skill-reflex">S</span
+          ><!-- --><span class="skill-reflex">P</span
+          ><!-- --><span class="skill-reflex">.</span
+          ><!-- --><span class="skill-reflex">N</span
+          ><!-- --><span class="skill-reflex">E</span
+          ><!-- --><span class="skill-reflex">T</span>
+          <span class="skill-reflex">M</span
+          ><!-- --><span class="skill-reflex">V</span
+          ><!-- --><span class="skill-reflex">C</span>
+        </span>
+        <span class="skill-item technologies-card-skill">
+          <span class="skill-reflex">M</span
+          ><!-- --><span class="skill-reflex">y</span
+          ><!-- --><span class="skill-reflex">S</span
+          ><!-- --><span class="skill-reflex">Q</span
+          ><!-- --><span class="skill-reflex">L</span>
+        </span>
+          <span class="skill-item technologies-card-skill">
+            <span class="skill-reflex">P</span
+            ><!-- --><span class="skill-reflex">o</span
+            ><!-- --><span class="skill-reflex">s</span
+            ><!-- --><span class="skill-reflex">t</span
+            ><!-- --><span class="skill-reflex">g</span
+            ><!-- --><span class="skill-reflex">r</span
+            ><!-- --><span class="skill-reflex">e</span
+            ><!-- --><span class="skill-reflex">S</span
+            ><!-- --><span class="skill-reflex">Q</span
+            ><!-- --><span class="skill-reflex">L</span>
+          </span>
+        </span>
+<!-- java -->
+        <span class="skill-item technologies-card-skill">
+          <span class="skill-reflex">J</span
+          ><!-- --><span class="skill-reflex">a</span
+          ><!-- --><span class="skill-reflex">v</span
+          ><!-- --><span class="skill-reflex">a</span>
+        </span>
+        <!-- python -->
+        <span class="skill-item technologies-card-skill">
+          <span class="skill-reflex">P</span
+          ><!-- --><span class="skill-reflex">y</span
+          ><!-- --><span class="skill-reflex">t</span
+          ><!-- --><span class="skill-reflex">h</span
+          ><!-- --><span class="skill-reflex">o</span
+          ><!-- --><span class="skill-reflex">n</span>
+        </span>
+        <!--php-->
+        <span class="skill-item technologies-card-skill">
+          <span class="skill-reflex">P</span
+          ><!-- --><span class="skill-reflex">H</span
+          ><!-- --><span class="skill-reflex">P</span>
       </div>
     </section>
     <div class="border"></div>
@@ -277,6 +383,7 @@
         </div>
       </header>
     </section>
+    <!-- Wrap each character in a span -->
 
     <div class="border"></div>
     <footer class="footer-sec">
@@ -287,6 +394,21 @@
         ></a>
       </div>
     </footer>
+<script>
+  const heading = document.getElementById('about-heading');
+
+  heading.addEventListener('animationend', () => {
+    heading.classList.remove('animate__fadeInDown');
+    heading.classList.add('animate__swing'); // or animate__heartBeat, animate__rubberBand
+  });
+
+  const image = document.querySelector('.personal-img');
+  image.addEventListener('animationend', () => {
+    image.classList.remove('animate__zoomIn');
+    image.classList.add('animate__heartBeat'); // or animate__shakeX, animate__pulse
+  });
+
+</script>
     <script src="script.js"></script>
   </body>
 </html>

@@ -520,13 +520,30 @@ a:active {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+.skill-reflex {
+  display: inline-block; /* Required for individual character effects */
+  transition: transform 0.2s;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0;
+}
+.skill-reflex:hover {
+  transform: scale(1.2) rotate(5deg); /* Bounce + slight rotation */
+  color: #ff6b6b; /* Optional: Change color */
+}
+.animate__animated.animate__fadeInUp {
+  --animate-duration: 1.5s; /* Make animations faster/slower */
+}
 .technologies-card-skill {
   background-color: #1a365d;
   color: #4299e1;
-  padding: 0.5rem;
-  padding: 0.5rem 2rem;
+  padding: 0.8rem;
+  padding: 0.8rem 2rem;
   border-radius: 1rem;
   margin: 4rem;
+  font-size: 1.8rem;
+  font-weight: bold;
   /* background-image: linear-gradient(
     to left,
     rgb(121, 40, 202),
@@ -690,6 +707,7 @@ oklch(80.8% 0.114 19.571),
   .about-heading {
     font-size: 3.2rem;
   }
+
   .about-sec {
     flex-direction: column;
     align-items: center;

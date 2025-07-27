@@ -37,3 +37,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const skills = document.querySelectorAll(".skill-item"); // Target each skill
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate__animated", "animate__fadeInUp");
+          observer.unobserve(entry.target); // Stop observing after animating
+        }
+      });
+    },
+    { threshold: 0.1 }
+  ); // Trigger when 10% of the element is visible
+
+  skills.forEach((skill) => observer.observe(skill));
+});
