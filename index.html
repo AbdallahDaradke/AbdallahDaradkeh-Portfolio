@@ -13,11 +13,13 @@
     />
     <link rel="stylesheet" href="style.css" />
     <!-- <link rel="stylesheet" href="styleresponsive.css" /> -->
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 
     <link
       rel="stylesheet"
@@ -35,28 +37,56 @@
   </head>
 
   <body>
-    <section class="main-list-section" id="main-list">
+    <header class="main-list-section" id="main-list">
       <nav class="nav-bar">
         <ul class="main-list">
           <div class="main-list-name">
-            <li class="my-name">Abdallah Daradkeh</li>
+            <li class="glare-text my-name">Abdallah Daradkeh</li>
           </div>
 
           <div class="main-list-items">
-            <li><a href="#main-list">Home</a></li>
-            <li><a href="#about-me">About</a></li>
-            <li><a href="#my-experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#achievement">Achievements</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="menu-item">
+              <span class="icon"><a href="#main-list"><i class="fa-solid fa-house"></i></a></span>
+            <span class="text"><a href="#main-list">Home</a></span></li>
+            <li class="menu-item">
+              <span class="icon"><a href="#about-me"><i class="bi bi-person-fill fs-6"></i></a></span>
+              <span class="text"><a href="#about-me">About</a></span>
+            </li>
+             <li class="menu-item">
+              <span class="icon"><a href="#my-experience"><i class="bi bi-briefcase-fill"></i></a></span>
+              <span class="text"><a href="#my-experience">Experience</a></span>
+            </li>
+          
+            <li class="menu-item">
+              <span class="icon"><a href="#projects"><i class="bi bi-folder-fill"></i></a></span>
+              <span class="text"><a href="#projects">Projects</a></span>
+            </li>
+            <li class="menu-item">
+              <span class="icon"><a href="#achievement"><i class="bi bi-trophy-fill"></i></a></span>
+              <span class="text"><a href="#achievement">Achievements</a></span>
+            </li>
+            <li class="menu-item">
+              <span class="icon"><a href="#skills"><i class="bi bi-gear-fill"></i></a></span>
+              <span class="text"><a href="#skills">Skills</a></span>
+            </li>
+            <li class="menu-item">
+              <span class="icon"><a href="#contact"><i class="bi bi-envelope-fill"></i></a></span>
+              <span class="text"><a href="#contact">Contact</a></span>
+            </li>
           </div>
         </ul>
       </nav>
-    </section>
+    </header>
+    
+  
     <section class="about-sec">
       <div class="about">
-        <h2 id="about-heading" class="animate__animated animate__fadeInDown about-heading">Welcome to my Portfolio!</h2>
+        <h2 id="about-heading" class="animate__animated animate__fadeInDown about-heading">
+          <span class="about-heading-reflex">W</span><!----><span class="about-heading-reflex">e</span><!----><span class="about-heading-reflex">l</span><!----><span class="about-heading-reflex">c</span><!----><span class="about-heading-reflex">o</span><!----><span class="about-heading-reflex">m</span><!----><span class="about-heading-reflex">e</span>
+          <span class="about-heading-reflex">t</span><!----><span class="about-heading-reflex">o</span>
+          <span class="about-heading-reflex">m</span><!----><span class="about-heading-reflex">y</span>
+          <span class="about-heading-reflex">P</span><!----><span class="about-heading-reflex">o</span><!----><span class="about-heading-reflex">r</span><!----><span class="about-heading-reflex">t</span><!----><span class="about-heading-reflex">f</span><!----><span class="about-heading-reflex">o</span><!----><span class="about-heading-reflex">l</span><!----><span class="about-heading-reflex">i</span><!----><span class="about-heading-reflex">o</span><!----><span class="about-heading-reflex">!</span>
+        </h2>
         <p class="animate__animated animate__zoomIn about-para">
           I am a Full Stack Web Developer with expertise in front-end and
           back-end technologies. I have hands-on experience in ASP.NET MVC,
@@ -409,6 +439,61 @@
   });
 
 </script>
+<script>
+    const img = document.getElementsByClassName("programmer-img")[0];
+    const headingPara2 = document.getElementsByClassName("hello-about-head")[0];
+    const paragraph = document.getElementsByClassName("about-me-para")[0];
+    const name = document.getElementsByClassName("h2-hello-my-name")[0];
+
+  //   // Step 1: Zoom In Everything
+  // img.classList.add("animate__animated", "animate__zoomIn");
+  //   headingPara2.classList.add("animate__animated", "animate__zoomIn");
+  //   paragraph.classList.add("animate__animated", "animate__zoomIn");
+
+  //      // Step 2: Flip Name After Zoom-In
+  // heading.addEventListener("animationend", () => {
+  //   name.classList.add("animate__animated", "animate__flipInX", "animate__delay-1s");
+  // });
+
+</script>
+<script>
+     const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const animation = el.dataset.animation;
+
+        el.classList.add("animate__animated", animation, "animated-visible");
+
+        // Flip name after heading finishes animation
+        if (el.classList.contains("hello-about-head")) {
+          el.addEventListener("animationend", () => {
+            const name = document.querySelector(".h2-hello-my-name");
+            name.classList.add("animate__animated", "animate__flipInX", "animated-visible");
+          }, { once: true });
+        }
+
+        observer.unobserve(el); // Run only once
+      }
+    });
+  }, {
+    threshold: 0.5
+  });
+
+  const elementsToAnimate = [
+    { selector: ".programmer-img", animation: "animate__zoomIn" },
+    { selector: ".hello-about-head", animation: "animate__zoomIn" },
+    { selector: ".about-me-para", animation: "animate__zoomIn" }
+  ];
+
+  elementsToAnimate.forEach(item => {
+    const el = document.querySelector(item.selector);
+    if (el) {
+      el.dataset.animation = item.animation;
+      observer.observe(el);
+    }
+  });
+  </script>
     <script src="script.js"></script>
   </body>
 </html>

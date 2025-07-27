@@ -13,11 +13,48 @@ html {
   /* In this way we respect user defualt font-size(User can customize the font-size) */
   font-size: 62.5%;
 }
+
 body {
   background-color: rgb(26 32 44);
   color: #a0aec0;
   max-width: 100%;
 }
+
+/*try*/
+
+.menu-item {
+  /* width: 60px; */
+  /* height: 60px; */
+  /* background-color: #111; */
+  /* color: white; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: width 0.3s;
+  overflow: hidden;
+}
+
+.menu-item .text {
+  display: none;
+}
+
+.menu-item:hover {
+  /* width: 100px; */
+}
+
+.menu-item:hover .icon {
+  display: none;
+}
+
+.menu-item:hover .text {
+  display: inline;
+}
+
+/*try*/
+
 /* Main Navbar */
 .main-list {
   list-style-type: none;
@@ -64,6 +101,59 @@ body {
   font-size: 2.5rem;
 }
 
+@keyframes slideDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+header {
+  animation: slideDown 0.8s ease-out;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff6666;
+  transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.glare-text:hover {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(90deg, #ff6666, #fff, #ff6666);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+}
+@keyframes shine {
+  0% {
+    background-position: -100%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
 /* About Section */
 
 .btn {
@@ -103,6 +193,17 @@ body {
   font-size: 4rem;
   color: oklch(70.4% 0.191 22.216);
   max-width: 100%;
+}
+.about-heading-reflex {
+  display: inline-block; /* Required for individual character effects */
+  transition: transform 0.2s;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0;
+}
+.about-heading-reflex:hover {
+  transform: scale(1.2) rotate(5deg); /* Bounce + slight rotation */
+  color: #b388eb; /* Optional: Change color */
 }
 .about-para {
   max-width: 60rem;
@@ -153,6 +254,7 @@ body {
 .h2-hello-my-name {
   color: oklch(80.8% 0.114 19.571);
   font-size: 3rem;
+  display: inline-block;
 }
 .about-me-sec {
   display: flex;
