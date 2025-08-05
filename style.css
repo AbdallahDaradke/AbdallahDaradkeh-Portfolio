@@ -412,7 +412,7 @@ nav a:hover::after {
 .project-card {
   display: flex;
   flex-direction: column;
-  max-width: 50rem;
+  max-width: 50rem !important;
   height: 40rem;
   box-shadow: #0000001a;
   background-color: #121212;
@@ -422,7 +422,7 @@ nav a:hover::after {
   justify-content: center; */
   /* text-align: end; */
   text-align: left;
-  flex: 0 1 20%;
+  flex: 0 1 30%;
 }
 .project-content {
   display: flex;
@@ -438,10 +438,15 @@ nav a:hover::after {
   filter: blur(0rem);
   box-shadow: #0000001a;
 }
+.para-title {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
 .project-para {
   /* align-self: flex-start; */
   /* justify-content: flex-start; */
   text-align: left;
+  font-size: 1.5rem;
 }
 .project-head {
   /* display: flex;
