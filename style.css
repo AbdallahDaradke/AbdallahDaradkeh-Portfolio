@@ -441,6 +441,7 @@ nav a:hover::after {
 .para-title {
   font-size: 2rem;
   margin-bottom: 0.4rem;
+  margin-right: 0.5rem;
 }
 .project-para {
   /* align-self: flex-start; */
